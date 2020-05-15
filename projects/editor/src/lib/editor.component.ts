@@ -6,67 +6,27 @@ import {
   ViewChild,
   ElementRef,
   Output,
-  EventEmitter
+  EventEmitter,
+  ViewEncapsulation
 } from '@angular/core';
 
 import Editor, { EditorOptions } from '@toast-ui/editor';
 import '@toast-ui/editor/dist/i18n/zh-cn';
-
-interface ToolbarButton {
-  type: string;
-  options: ButtonOptions;
-}
-
-interface ButtonOptions {
-  el?: HTMLElement;
-  className?: string;
-  command?: string;
-  event?: string;
-  text?: string;
-  tooltip?: string;
-  style?: string;
-  state?: string;
-}
-
-type LinkAttribute = {
-  rel: string;
-  target: string;
-  contenteditable: boolean | 'true' | 'false';
-  hreflang: string;
-  type: string;
-};
-
-type SourceType = 'wysiwyg' | 'markdown';
-
-
-interface ToolbarState {
-  strong: boolean;
-  emph: boolean;
-  strike: boolean;
-  code: boolean;
-  codeBlock: boolean;
-  blockQuote: boolean;
-  table: boolean;
-  heading: boolean;
-  list: boolean;
-  orderedList: boolean;
-  taskList: boolean;
-}
-
-type MarkdownToolbarState = ToolbarState & {
-  thematicBreak: boolean;
-  source: 'markdown';
-};
-
-type WysiwygToolbarState = ToolbarState & {
-  source: 'wysiwyg';
-};
+import {
+  LinkAttribute,
+  ToolbarButton,
+  MarkdownToolbarState,
+  SourceType,
+  WysiwygToolbarState
+} from './type';
 
 @Component({
   selector: 'ng-editor',
   template: `
     <div #editor></div>
-  `
+  `,
+  styleUrls: ['editor.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class EditorComponent implements OnInit, AfterViewInit {
   @Input() height = '600px';
