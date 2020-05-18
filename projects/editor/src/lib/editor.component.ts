@@ -21,7 +21,7 @@ import {
 } from './type';
 
 @Component({
-  selector: 'ng-editor',
+  selector: 'zzh-editor',
   template: `
     <div #editor></div>
   `,

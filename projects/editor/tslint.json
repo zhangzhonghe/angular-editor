@@ -4,13 +4,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "ng",
+      "zzh",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "ng",
+      "zzh",
       "kebab-case"
     ]
   }
