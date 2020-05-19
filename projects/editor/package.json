@@ -1,14 +1,14 @@
 {
-  "name": "@zzh/angular-editor",
-  "version": "1.0.0",
+  "name": "angular-editor-component",
+  "version": "1.0.1",
   "description": "The angular version of Markdown WYSIWYG Editor. GFM Standard + Chart & UML Extensible.",
   "author": "zhangzhonghe",
   "license": "MIT",
+  "repository": "https://github.com/zhangzhonghe/angular-editor",
   "peerDependencies": {
     "@angular/common": "^9.1.7",
     "@angular/core": "^9.1.7",
     "@toast-ui/editor": "2.1.2",
-    "codemirror": "5.53.2",
     "tslib": "^1.10.0"
   }
 }

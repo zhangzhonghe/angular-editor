@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { EditorModule } from 'projects/editor/src/public-api';
+import { EditorModule } from 'angular-editor-component';
 
 import { AppComponent } from './app.component';
 
