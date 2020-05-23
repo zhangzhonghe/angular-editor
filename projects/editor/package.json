@@ -1,6 +1,6 @@
 {
   "name": "angular-editor-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The angular version of Markdown WYSIWYG Editor. GFM Standard + Chart & UML Extensible.",
   "author": "zhangzhonghe",
   "license": "MIT",
