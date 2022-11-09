@@ -19,7 +19,7 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
-    "@toast-ui/editor": "^2.1.2",
+    "@toast-ui/editor": "^2.2.0",
     "angular-editor-component": "^1.0.1",
     "codemirror": "^5.58.2",
     "rxjs": "~6.5.4",
